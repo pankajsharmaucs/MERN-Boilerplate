@@ -38,7 +38,7 @@ app.get('/api', (req, res) => {
 });
 
 // Serve React Frontend (if deployed)
-const frontendPath = path.join(__dirname, '../frontend/build');
+const frontendPath = path.join(__dirname, '../frontend/dist');
 app.use(express.static(frontendPath));
 
 app.get('*', (req, res) => {
